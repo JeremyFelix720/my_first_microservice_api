@@ -1,6 +1,6 @@
 services:
   web:
-    build: .
+    build: . # Fait référence au Dockerfile pour créer une première image
     ports:
       - "8000:5000"
     volumes:
@@ -8,4 +8,4 @@ services:
     environment:
       FLASK_DEBUG: "true"
   redis:
-    image: "redis:alpine"
+    image: "redis:alpine" # Crée une deuxième image ?
